@@ -8,76 +8,92 @@
     <link rel="stylesheet" href="./src/style.css">
   </head>
   <body class="bg-[#1A1A1A] max-w-[1400px] m-auto">
-    <header >
-      <div class="">
-        <nav class="flex items-center justify-around">
-          <div>
-            <img src="./src/logo/ferrari_logo_icon.svg" alt="">
-          </div>
-          <div class="flex text-[#FFFFFF] gap-20">
-            <ul>
-              <li><a href="#"><span>Услуги</span></a></li>
-            </ul>
-            <ul>
-              <li><a href="#"><span>Преимущества</span></a></li>
-            </ul>
-            <ul>
-              <li><a href="#"><span>Наши работы</span></a></li>
-            </ul>
-            <ul>
-              <li><a href="#"><span>Контакты</span></a></li>
-            </ul>
-          </div>
-          <div class="flex items-center gap-10">
-            <a href="+79999990990" class="text-[#FFFFFF] border-b border-b-red-500 text-lg leading- [10px]">+7 (999) 999-09-90</a>
-              <div class="flex gap-5">
-                <img src="./src/icons/whatsapp-2.svg" alt="">
-                <img src="./src/icons/telegram-3.svg" alt="">
-              </div>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <section class="justify-around w-[1320px] m-auto relative auto">
-      <div id="hero" class="">
-<div>
-  <h2 class="text-[#FFFFFF] text-[52px] mt-[146px] leading-[100%] font-extrabold uppercase"> Превосходство в обслуживании</h2>
-  <h3 class="text-[#FFFFFF] text-[36px] py-5 font-semibold ">Ваша машина в надежных руках!</h3>
-</div>
-<div id="left">
-<button class=" px-[66px] py-5 bg-[#FF0000] rounded-[10px] text-[#FFFFFF] my-[50px] font-semibold text-[18px]">ОСТАВИТЬ ЗАЯВКУ</button>
-<div class="flex border border-[#FFB72B] w-[275px] h-[60px] rounded-[10px] gap-2.5 items-center" >
-  <img src="./src/flag/italy-flag.svg" alt="">
-  <p class="text-[#FFFFFF]">Специально
-обученные механики</p>
-</div>
-<div class="flex border border-[#FFB72B] w-[275px] h-[60px] rounded-[10px] my-5 items-center ">
-  <img src="./src/icons/premium-icon.svg" alt="premium-icon">
-  <p class="text-[#FFFFFF] gap-2.5">Только премиум <br>
-качество</p>
-</div>
-<div>
-</div>
-</div>
-<div id="right" class="">
-<div class=" ">
-  <h1 class="text-[#FFFFFF] text-[100px]  absolute left-[550px] top-[110px]">F812 SUPER</h1>
+  <header class="w-full py-4">
+  <nav class="container mx-auto flex items-center justify-between fixed top-0 z-100 bg-[#1A1A1ABF] ">
 
-</div>
-  <div class="absolute bottom-2.5 left-[488px]" >
-  <img src="./src/images/ferrari.png" alt="">
+    <!-- Logo -->
+    <div>
+      <img src="./src/logo/ferrari_logo_icon.svg" class="w-16 sm:w-20" alt="">
+    </div>
 
-</div>
-<div class="">
-  <img src="./src/logo/ferrari-logo.svg" class="absolute  left-[1200px] bottom-[200px] ">
-</div>
-</div>
-<div class="flex items-center mt-[124px] gap-5">
-  <img src="./src/icons/scroll.svg" alt="">
-  <span class="text-[#FFFFFF]">Листайте вниз</span>
-</div>
+    <!-- Menu -->
+    <div class="hidden md:flex text-white gap-10 ">
+      <a href="#" class="hover:text-red-500 duration-200">Услуги</a>
+      <a href="#" class="hover:text-red-500 duration-200">Преимущества</a>
+      <a href="#" class="hover:text-red-500 duration-200">Наши работы</a>
+      <a href="#" class="hover:text-red-500 duration-200">Контакты</a>
+    </div>
+
+    <!-- Phone + Icons -->
+    <div class="hidden md:flex items-center gap-8">
+      <a href="tel:+79999990990" class="text-white border-b border-red-500 text-lg leading-[10px]">
+        +7 (999) 999-09-90
+      </a>
+      <div class="flex gap-4">
+        <img src="./src/icons/whatsapp-2.svg" class="w-6" alt="">
+        <img src="./src/icons/telegram-3.svg" class="w-6" alt="">
       </div>
-    </section>
+    </div>
+ 
+    <!-- Mobile Burger -->
+    <button class="text-red-500 text-3xl md:flex ">
+      ☰
+    </button>
+
+  </nav>
+<section class="w-full ">
+  <div class="max-w-[1320px] mx-auto px-4 py-20 grid grid-cols-1 lg:grid-cols- items-center gap-10">
+
+    <!-- LEFT CONTENT -->
+    <div>
+      <h1 class="text-white text-[36px] md:text-[48px] font-extrabold uppercase leading-tight">
+        ПРЕВОСХОДСТВО В ОБСЛУЖИВАНИИ
+      </h1>
+
+      <h2 class="text-white text-[22px] md:text-[28px] mt-3">
+        Ваша машина в надежных руках!
+      </h2>
+
+      <button class="mt-6 px-10 py-4 bg-red-600 rounded-lg text-white font-semibold text-[18px]">
+        ОСТАВИТЬ ЗАЯВКУ
+      </button>
+
+      <div class="mt-8 space-y-4">
+        <div class="flex items-center gap-3 border border-[#FFB72B] w-[280px] h-[60px] rounded-lg px-3">
+          <img src="./src/flag/italy-flag.svg" alt="">
+          <p class="text-white text-[14px] leading-tight">Специально<br>обученные механики</p>
+        </div>
+
+        <div class="flex items-center gap-3 border border-[#FFB72B] w-[280px] h-[60px] rounded-lg px-3">
+          <img src="./src/icons/premium-icon.svg" alt="">
+          <p class="text-white text-[14px] leading-tight">Только премиум<br>качество</p>
+        </div>
+      </div>
+
+      <div class="flex items-center mt-8 gap-3">
+        <img src="./src/icons/scroll.svg" alt="">
+        <span class="text-white">Листайте вниз</span>
+      </div>
+    </div>
+
+    <!-- RIGHT SECTION (CAR + BIG TEXT) -->
+    <div class="text-center lg:text-left">
+      <h1 class="text-white text-[70px] md:text-[100px] font-extrabold mb-[-40px]">
+        F812 SUPER
+      </h1>
+
+      <img
+        src="./src/images/ferrari.png"
+        class="max-w-[650px] w-full mx-auto lg:mx-0"
+        alt="Ferrari"
+      >
+    </div>
+
+  </div>
+</section>
+
+
+
     <section class="max-w-[1400px] h-[314px] border border-red-500 my-[100px] ml-[100px] rounded-[10px]">
       <div class="m-auto ">
         <div class="float-right">
